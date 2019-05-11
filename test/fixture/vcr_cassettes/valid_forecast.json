@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "User-agent": "DarkJason",
+        "Content-Encoding": "gzip"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.darksky.net/forecast/DARKSKY_API_KEY/39.749476,-104.991428?lang=en&units=us"
+    },
+    "response": {
+      "binary": false,
+      "body": "#Reference<0.3527339217.4131389443.221267>",
+      "headers": {
+        "Date": "Sat, 11 May 2019 04:17:09 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "33122",
+        "Connection": "keep-alive",
+        "X-Authentication-Time": "3ms",
+        "Cache-Control": "max-age=60",
+        "Expires": "Sat, 11 May 2019 04:18:09 +0000",
+        "X-Forecast-API-Calls": "73",
+        "X-Content-Type-Options": "nosniff",
+        "X-Response-Time": "237.230ms",
+        "Vary": "Accept-Encoding"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
