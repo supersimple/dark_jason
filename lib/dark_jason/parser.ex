@@ -24,14 +24,20 @@ defmodule DarkJason.Parser do
         {:error, body, 403}
 
       {:ok, %HTTPoison.Response{body: body, headers: _, status_code: status}} ->
-        {:ok, json} = Jason.decode(body)
-        {:error, json, status}
+        parse_error_response(body, status)
 
       {:error, %HTTPoison.Error{id: _, reason: reason}} ->
         {:error, %{reason: reason}}
 
       _ ->
         response
+    end
+  end
+
+  defp parse_error_response(body, status) do
+    case Jason.decode(body) do
+      {:ok, json} -> {:error, json, status}
+      {:error, error} -> {:error, %{reason: "response can not be decoded."}, status}
     end
   end
 

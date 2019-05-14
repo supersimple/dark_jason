@@ -4,7 +4,7 @@ defmodule DarkJason.Mixfile do
   def project do
     [
       app: :dark_jason,
-      version: "0.1.7",
+      version: "0.1.8",
       elixir: "~> 1.7",
       description: "A Darksky.net weather api client for Elixir",
       source_url: "https://github.com/supersimple/dark_jason",
